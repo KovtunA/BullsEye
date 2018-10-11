@@ -102,6 +102,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="levelLable" destination="9G4-8A-Pbd" id="NfY-wL-SWv"/>
                         <outlet property="scoreLab" destination="2Dj-Ef-kMj" id="aPf-UT-VUD"/>
                         <outlet property="slider" destination="CQD-5O-cUm" id="8zP-NE-s36"/>
                         <outlet property="targetLable" destination="Txr-GX-oLK" id="GRz-1f-jqq"/>
