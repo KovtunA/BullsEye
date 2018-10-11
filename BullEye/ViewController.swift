@@ -26,10 +26,7 @@ class ViewController: UIViewController {
 
     @IBAction func showAlert(){
        
-        var difference = currentValue - targetValue
-        if difference < 0 {
-            difference = difference * -1
-        }
+        let difference = abs(targetValue - currentValue)
         
         let messege = "yor value is: \(currentValue)" +
             "\nThe target value is: \(targetValue)" +
