@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var targetLable: UILabel!
     @IBOutlet weak var scoreLab: UILabel!
     @IBOutlet weak var levelLable: UILabel!
+    @IBOutlet weak var startOverButton: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,5 +79,11 @@ class ViewController: UIViewController {
     levelLable.text = String(level)
     }
     
-}
+    @ IBAction func startOver (){
+        score = 0
+        level = 0
+        newRound()
+    }
+        
+    }
 
