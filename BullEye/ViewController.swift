@@ -52,17 +52,12 @@ class ViewController: UIViewController {
         currentValue = 50
         slider.value = Float(currentValue)
         upadateLabel()
-        showscore()
     }
     
      func upadateLabel() {
     targetLable.text = String(targetValue)
-    }
-    
-    func showscore() {
     scoreLab.text = String(score)
     }
-
-
+    
 }
 
