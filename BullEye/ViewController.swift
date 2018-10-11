@@ -35,11 +35,25 @@ class ViewController: UIViewController {
         
         score += points
         
-        let messege = "yor value is: \(currentValue)" +
-            "\nThe target value is: \(targetValue)" +
-        "\nThe difference is: \(difference)"
-        + "\nYour scored \(points) points"
-        let alert = UIAlertController(title: "hi", message: messege, preferredStyle: .alert)
+        let title: String
+        if difference == 0 {
+            title = "prefect"
+        } else if difference < 5 {
+            title = "You almost had it"
+        } else if difference < 10 {
+            title = "prety good"
+        } else {
+            title = "try again"
+        }
+        
+        if difference  == 0 {
+            score += 100
+        } else if difference == 1 {
+            score += 50
+        }
+        
+        let messege = "\nYour scored \(points) points"
+        let alert = UIAlertController(title: title, message: messege, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
