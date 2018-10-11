@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         } else if difference < 5 {
             title = "You almost had it"
             if difference == 1 {
-                points += 50
+                points += 51
             }
         } else if difference < 10 {
             title = "prety good"
@@ -53,10 +53,12 @@ class ViewController: UIViewController {
         
         let messege = "\nYour scored \(points) points"
         let alert = UIAlertController(title: title, message: messege, preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let action = UIAlertAction(title: "OK", style: .default, handler: {
+            action in
+            self.newRound()
+        })
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        newRound()
     }
     @IBAction func SliderMoved( slider: UISlider){
         let RoundedValue = slider.value.rounded()
