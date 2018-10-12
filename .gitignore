@@ -1,0 +1,4 @@
+.DS_Store
+		
+BullEye.xcodeproj/*
+!BullEye.xcodeproj/project.pbxproj
