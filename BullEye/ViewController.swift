@@ -26,7 +26,23 @@ class ViewController: UIViewController {
         let rounedValue = slider.value.rounded()
         currentValue = Int (rounedValue)
         newRound()
+       
+     //   let thumbImageNormal = UIImage(named: "SliderThumb-Normal")!
+        let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
+        slider.setThumbImage(thumbImageNormal, for: .normal)
         
+        let thumImageHiglited = #imageLiteral(resourceName: "SliderThumb-Highlighted")
+        slider.setThumbImage(thumImageHiglited, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        let trackLeftimage = #imageLiteral(resourceName: "SliderTrackLeft")
+        let trackLeftResizable = trackLeftimage.resizableImage(withCapInsets: insets)
+        slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
+        
+        let trackRightimage = #imageLiteral(resourceName: "SliderTrackRight")
+        let trackRightResizable = trackRightimage.resizableImage(withCapInsets: insets)
+        slider.setMaximumTrackImage(trackRightResizable, for: .normal)
     }
 
     @IBAction func showAlert(){
