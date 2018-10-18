@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina6_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,14 +14,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BullEye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="SdQ-j9-hZ2">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HX-eD-c6I">
-                                <rect key="frame" x="67" y="25.5" width="533" height="324"/>
+                                <rect key="frame" x="181.66666666666663" y="45" width="533" height="324"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Put the Bull's Eye as close as you can to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Is-ST-p6k">
                                         <rect key="frame" x="32" y="20" width="402" height="23"/>
@@ -105,7 +105,7 @@
                                             <action selector="SliderMovedWithSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="ewb-IG-GuV"/>
                                         </connections>
                                     </slider>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcu-q8-bdI">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcu-q8-bdI">
                                         <rect key="frame" x="217" y="167" width="100" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
@@ -114,7 +114,7 @@
                                             <color key="titleColor" red="0.37647058823529411" green="0.11764705882352941" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
-                                        <state key="highlighted" image="Button-Highlighted"/>
+                                        <state key="highlighted" backgroundImage="Button-Highlighted"/>
                                         <connections>
                                             <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Zm-K8-jcJ"/>
                                         </connections>
@@ -154,14 +154,14 @@
             <objects>
                 <viewController id="voi-v3-2xs" customClass="AboutViewController" customModule="BullEye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7S1-0d-XJq">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="wbY-lG-Tvm">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qA0-Ou-hSs">
-                                <rect key="frame" x="298" y="318" width="71" height="37"/>
+                                <rect key="frame" x="342" y="336" width="212" height="37"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -175,8 +175,8 @@
                                     <action selector="close" destination="voi-v3-2xs" eventType="touchUpInside" id="cWh-gb-sr7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWb-Wg-cdp">
-                                <rect key="frame" x="537" y="318" width="111" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWb-Wg-cdp">
+                                <rect key="frame" x="721" y="336" width="111" height="37"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -188,8 +188,8 @@
                                     <segue destination="KvU-Pu-dID" kind="presentation" id="4iy-fe-lHO"/>
                                 </connections>
                             </button>
-                            <wkWebView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OZE-ii-V4D">
-                                <rect key="frame" x="20" y="20" width="627" height="247"/>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZE-ii-V4D">
+                                <rect key="frame" x="64" y="20" width="768" height="266"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -199,23 +199,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="OZE-ii-V4D" firstAttribute="top" secondItem="eV8-jm-CTZ" secondAttribute="top" constant="20" id="Dr8-ov-6OO"/>
                             <constraint firstItem="eV8-jm-CTZ" firstAttribute="bottom" secondItem="wbY-lG-Tvm" secondAttribute="bottom" id="MQ6-OD-euu"/>
-                            <constraint firstItem="eV8-jm-CTZ" firstAttribute="bottom" secondItem="qA0-Ou-hSs" secondAttribute="bottom" constant="20" id="Nps-Hl-gkU"/>
-                            <constraint firstItem="OZE-ii-V4D" firstAttribute="top" secondItem="eV8-jm-CTZ" secondAttribute="top" constant="20" id="TpB-xZ-fQI"/>
-                            <constraint firstItem="eV8-jm-CTZ" firstAttribute="trailing" secondItem="OZE-ii-V4D" secondAttribute="trailing" constant="20" id="U04-OJ-gO5"/>
+                            <constraint firstItem="eV8-jm-CTZ" firstAttribute="trailing" secondItem="OZE-ii-V4D" secondAttribute="trailing" constant="20" id="N8l-3c-y1S"/>
+                            <constraint firstItem="qA0-Ou-hSs" firstAttribute="top" secondItem="OZE-ii-V4D" secondAttribute="bottom" constant="50" id="Olg-hd-Qya"/>
                             <constraint firstItem="eV8-jm-CTZ" firstAttribute="trailing" secondItem="wbY-lG-Tvm" secondAttribute="trailing" id="UPK-y0-e4k"/>
                             <constraint firstItem="eV8-jm-CTZ" firstAttribute="trailing" secondItem="jWb-Wg-cdp" secondAttribute="trailing" constant="20" id="Wk0-Lp-Jpm"/>
                             <constraint firstItem="qA0-Ou-hSs" firstAttribute="centerX" secondItem="7S1-0d-XJq" secondAttribute="centerX" id="Xqb-WI-CPQ"/>
+                            <constraint firstItem="eV8-jm-CTZ" firstAttribute="bottom" secondItem="qA0-Ou-hSs" secondAttribute="bottom" constant="20" id="cGY-mI-YCA"/>
                             <constraint firstItem="wbY-lG-Tvm" firstAttribute="leading" secondItem="eV8-jm-CTZ" secondAttribute="leading" id="eCq-hC-JtQ"/>
                             <constraint firstItem="wbY-lG-Tvm" firstAttribute="top" secondItem="eV8-jm-CTZ" secondAttribute="top" id="j9g-i1-pPJ"/>
                             <constraint firstItem="qA0-Ou-hSs" firstAttribute="leading" secondItem="eV8-jm-CTZ" secondAttribute="leading" constant="298" id="k5A-Ke-VBR"/>
-                            <constraint firstItem="OZE-ii-V4D" firstAttribute="leading" secondItem="eV8-jm-CTZ" secondAttribute="leading" constant="20" id="wA8-pw-kzU"/>
                             <constraint firstItem="eV8-jm-CTZ" firstAttribute="bottom" secondItem="jWb-Wg-cdp" secondAttribute="bottom" constant="20" id="yJr-nl-JoW"/>
+                            <constraint firstItem="OZE-ii-V4D" firstAttribute="leading" secondItem="eV8-jm-CTZ" secondAttribute="leading" constant="20" id="yKs-pk-B92"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eV8-jm-CTZ"/>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="OZE-ii-V4D" id="OKL-8T-rQH"/>
+                        <outlet property="webView" destination="OZE-ii-V4D" id="scW-ya-sH8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x19-Eg-TI8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -227,22 +228,21 @@
             <objects>
                 <viewController id="KvU-Pu-dID" customClass="AboutMeViewController" customModule="BullEye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EDB-0N-RsV">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="1HN-Wz-5UA">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="some text about me " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LO7-dS-ATg">
-                                <rect key="frame" x="292" y="29" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="some text about me " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LO7-dS-ATg">
+                                <rect key="frame" x="208.33333333333331" y="20" width="623.66666666666674" height="296"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wh8-iX-dQ6">
-                                <rect key="frame" x="227" y="318" width="213" height="37"/>
+                                <rect key="frame" x="341.66666666666669" y="336" width="213.00000000000006" height="37"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -256,8 +256,8 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="OnY-Hm-8WV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkX-Qq-F2R">
-                                <rect key="frame" x="20" y="318" width="76" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkX-Qq-F2R">
+                                <rect key="frame" x="64" y="336" width="76" height="37"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -272,22 +272,30 @@
                                     <action selector="close" destination="KvU-Pu-dID" eventType="touchUpInside" id="QPb-6W-joS"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="dhP-7B-1sY">
-                                <rect key="frame" x="20" y="20" width="123" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="dhP-7B-1sY">
+                                <rect key="frame" x="64" y="20" width="79" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dhP-7B-1sY" secondAttribute="height" multiplier="3:4" id="yvi-d6-xxi"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Uo5-l8-uwB" firstAttribute="trailing" secondItem="Wh8-iX-dQ6" secondAttribute="trailing" constant="227" id="N2q-Am-Pk5"/>
+                            <constraint firstItem="Wh8-iX-dQ6" firstAttribute="top" secondItem="LO7-dS-ATg" secondAttribute="bottom" constant="20" id="6am-DD-xfC"/>
+                            <constraint firstItem="Uo5-l8-uwB" firstAttribute="trailing" secondItem="LO7-dS-ATg" secondAttribute="trailing" constant="20" id="7WU-yg-wQy"/>
+                            <constraint firstItem="Wh8-iX-dQ6" firstAttribute="centerX" secondItem="Uo5-l8-uwB" secondAttribute="centerX" id="86n-hS-paT"/>
+                            <constraint firstItem="LO7-dS-ATg" firstAttribute="leading" secondItem="dhP-7B-1sY" secondAttribute="trailing" constant="20" id="OkT-Dp-FfJ"/>
+                            <constraint firstItem="dhP-7B-1sY" firstAttribute="top" secondItem="Uo5-l8-uwB" secondAttribute="top" constant="20" id="Sgn-Ha-S0v"/>
                             <constraint firstItem="1HN-Wz-5UA" firstAttribute="leading" secondItem="Uo5-l8-uwB" secondAttribute="leading" id="UXW-gS-SVE"/>
                             <constraint firstItem="Uo5-l8-uwB" firstAttribute="bottom" secondItem="1HN-Wz-5UA" secondAttribute="bottom" id="Wx4-e8-K7A"/>
                             <constraint firstItem="Uo5-l8-uwB" firstAttribute="trailing" secondItem="1HN-Wz-5UA" secondAttribute="trailing" id="cRn-j3-F4l"/>
                             <constraint firstItem="Uo5-l8-uwB" firstAttribute="bottom" secondItem="jkX-Qq-F2R" secondAttribute="bottom" constant="20" id="e3q-pe-RWe"/>
-                            <constraint firstItem="Wh8-iX-dQ6" firstAttribute="leading" secondItem="jkX-Qq-F2R" secondAttribute="trailing" constant="131" id="iDQ-wO-haM"/>
+                            <constraint firstItem="dhP-7B-1sY" firstAttribute="leading" secondItem="Uo5-l8-uwB" secondAttribute="leading" constant="20" id="ebN-3E-M1A"/>
+                            <constraint firstItem="LO7-dS-ATg" firstAttribute="top" secondItem="Uo5-l8-uwB" secondAttribute="top" constant="20" id="hK6-8u-CvO"/>
                             <constraint firstItem="1HN-Wz-5UA" firstAttribute="top" secondItem="Uo5-l8-uwB" secondAttribute="top" id="qpg-Ns-U7H"/>
                             <constraint firstItem="Uo5-l8-uwB" firstAttribute="bottom" secondItem="Wh8-iX-dQ6" secondAttribute="bottom" constant="20" id="s1X-VZ-pVr"/>
                             <constraint firstItem="jkX-Qq-F2R" firstAttribute="leading" secondItem="Uo5-l8-uwB" secondAttribute="leading" constant="20" id="vU3-SL-Hp5"/>
+                            <constraint firstItem="dhP-7B-1sY" firstAttribute="height" secondItem="EDB-0N-RsV" secondAttribute="height" multiplier="0.4" id="zhM-9M-zte"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uo5-l8-uwB"/>
                     </view>
@@ -299,11 +307,11 @@
     </scenes>
     <resources>
         <image name="Background" width="480" height="320"/>
-        <image name="Button-Highlighted" width="16.5" height="37"/>
-        <image name="Button-Normal" width="16.5" height="37"/>
-        <image name="InfoButton" width="10" height="22"/>
-        <image name="SmallButton" width="32" height="32"/>
-        <image name="StartOverIcon" width="20" height="20"/>
+        <image name="Button-Highlighted" width="11" height="37"/>
+        <image name="Button-Normal" width="11" height="37"/>
+        <image name="InfoButton" width="6.6666665077209473" height="14.666666984558105"/>
+        <image name="SmallButton" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="StartOverIcon" width="13.333333015441895" height="13.333333015441895"/>
         <image name="image" width="958" height="1280"/>
     </resources>
 </document>
