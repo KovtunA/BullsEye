@@ -11,8 +11,6 @@ import WebKit
 
 class AboutViewController: UIViewController {
     
-    var parentVC: UIViewController?
-    
     @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {
@@ -22,12 +20,6 @@ class AboutViewController: UIViewController {
             let url = URL(fileURLWithPath: htmlPath)
             let request = URLRequest(url: url)
             webView.load(request)
-        }
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let aboutVC = segue.destination as? AboutMeViewController {
-            aboutVC.parentVCAbout = self
         }
     }
     

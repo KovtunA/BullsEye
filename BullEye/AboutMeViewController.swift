@@ -10,8 +10,6 @@ import UIKit
 
 class AboutMeViewController: UIViewController {
     
-    var parentVCAbout: AboutViewController?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -21,7 +19,7 @@ class AboutMeViewController: UIViewController {
     }
     
     @IBAction func goBacktoGame() {
-        if let snap = UIApplication.shared.delegate?.window??.snapshotView(afterScreenUpdates: false) { parentVCAbout?.view.addSubview(snap) }
-        self.parentVCAbout?.parentVC?.dismiss(animated: true, completion: nil)
+        if let snap = UIApplication.shared.delegate?.window??.snapshotView(afterScreenUpdates: false) { presentingViewController?.view.addSubview(snap) }
+        presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }
 }
