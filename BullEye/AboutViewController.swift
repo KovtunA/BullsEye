@@ -11,6 +11,8 @@ import WebKit
 
 class AboutViewController: UIViewController {
     
+    var parentVC: UIViewController?
+    
     @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {
@@ -25,7 +27,7 @@ class AboutViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let aboutVC = segue.destination as? AboutMeViewController {
-            aboutVC.parentVC = self
+            aboutVC.parentVCAbout = self
         }
     }
     

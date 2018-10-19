@@ -10,7 +10,7 @@ import UIKit
 
 class AboutMeViewController: UIViewController {
     
-    var parentVC: UIViewController?
+    var parentVCAbout: AboutViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +21,7 @@ class AboutMeViewController: UIViewController {
     }
     
     @IBAction func goBacktoGame() {
-        dismiss(animated: true, completion: {
-            self.parentVC?.dismiss(animated: true, completion: nil)
-        })
+        if let snap = UIApplication.shared.delegate?.window??.snapshotView(afterScreenUpdates: false) { parentVCAbout?.view.addSubview(snap) }
+        self.parentVCAbout?.parentVC?.dismiss(animated: true, completion: nil)
     }
 }

@@ -44,6 +44,12 @@ class ViewController: UIViewController {
         let trackRightResizable = trackRightimage.resizableImage(withCapInsets: insets)
         slider.setMaximumTrackImage(trackRightResizable, for: .normal)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let aboutVC = segue.destination as? AboutViewController {
+            aboutVC.parentVC = self
+        }
+    }
 
     @IBAction func showAlert(){
        
