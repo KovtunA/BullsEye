@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GameViewController.swift
 //  BullEye
 //
 //  Created by Anastasia on 10/10/18.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class GameViewController: UIViewController {
+    
     var currentValue = 0
     var targetValue = 0
     var score = 0
@@ -19,15 +19,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var targetLable: UILabel!
     @IBOutlet weak var scoreLab: UILabel!
     @IBOutlet weak var levelLable: UILabel!
-    @IBOutlet weak var startOverButton: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let rounedValue = slider.value.rounded()
         currentValue = Int (rounedValue)
         newRound()
-       
-     //   let thumbImageNormal = UIImage(named: "SliderThumb-Normal")!
+        
         let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
         slider.setThumbImage(thumbImageNormal, for: .normal)
         
@@ -44,9 +42,9 @@ class ViewController: UIViewController {
         let trackRightResizable = trackRightimage.resizableImage(withCapInsets: insets)
         slider.setMaximumTrackImage(trackRightResizable, for: .normal)
     }
-
+    
     @IBAction func showAlert(){
-       
+        
         let difference = abs(targetValue - currentValue)
         var points = 100 - difference
         
@@ -67,7 +65,6 @@ class ViewController: UIViewController {
             title = "try again"
         }
         
-        
         let messege = "\nYour scored \(points) points"
         let alert = UIAlertController(title: title, message: messege, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: {
@@ -77,10 +74,12 @@ class ViewController: UIViewController {
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
+    
     @IBAction func SliderMoved( slider: UISlider){
         let RoundedValue = slider.value.rounded()
         currentValue = Int (RoundedValue)
     }
+    
     func newRound() {
         level += 1
         targetValue = Int.random(in: 1 ... 100)
@@ -89,17 +88,15 @@ class ViewController: UIViewController {
         upadateLabel()
     }
     
-     func upadateLabel() {
-    targetLable.text = String(targetValue)
-    scoreLab.text = String(score)
-    levelLable.text = String(level)
+    func upadateLabel() {
+        targetLable.text = String(targetValue)
+        scoreLab.text = String(score)
+        levelLable.text = String(level)
     }
     
-    @ IBAction func startOver (){
+    @IBAction func startOver() {
         score = 0
         level = 0
         newRound()
     }
-        
-    }
-
+}
