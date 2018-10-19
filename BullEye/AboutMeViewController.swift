@@ -9,14 +9,20 @@
 import UIKit					
 
 class AboutMeViewController: UIViewController {
-
+    
+    var parentVC: UIViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBAction func close () {
+    @IBAction func close() {
         dismiss(animated: true, completion: nil)
-        
     }
-
+    
+    @IBAction func goBacktoGame() {
+        dismiss(animated: true, completion: {
+            self.parentVC?.dismiss(animated: true, completion: nil)
+        })
+    }
 }
