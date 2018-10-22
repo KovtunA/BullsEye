@@ -233,6 +233,7 @@
                             <constraint firstAttribute="bottom" secondItem="wbY-lG-Tvm" secondAttribute="bottom" id="MQ6-OD-euu"/>
                             <constraint firstItem="eV8-jm-CTZ" firstAttribute="trailing" secondItem="OZE-ii-V4D" secondAttribute="trailing" constant="20" id="N8l-3c-y1S"/>
                             <constraint firstItem="qA0-Ou-hSs" firstAttribute="top" secondItem="OZE-ii-V4D" secondAttribute="bottom" constant="50" id="Olg-hd-Qya"/>
+                            <constraint firstItem="jWb-Wg-cdp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qA0-Ou-hSs" secondAttribute="trailing" constant="8" symbolic="YES" id="Ser-oP-V5f"/>
                             <constraint firstAttribute="trailing" secondItem="wbY-lG-Tvm" secondAttribute="trailing" id="UPK-y0-e4k"/>
                             <constraint firstItem="eV8-jm-CTZ" firstAttribute="trailing" secondItem="jWb-Wg-cdp" secondAttribute="trailing" constant="20" id="Wk0-Lp-Jpm"/>
                             <constraint firstItem="qA0-Ou-hSs" firstAttribute="centerX" secondItem="7S1-0d-XJq" secondAttribute="centerX" id="Xqb-WI-CPQ"/>
@@ -264,16 +265,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="1HN-Wz-5UA">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="0.0" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LO7-dS-ATg">
-                                <rect key="frame" x="208.33333333333331" y="20" width="623.66666666666674" height="296"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">   The Dursleys had everything they wanted, but they also had a secret, and their greatest fear was that somebody would discover it. They didn’t think they could bear it if anyone found out about the Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met for several years; in fact, Mrs. Dursley pretended she didn’t have a sister, because her sister and her good-for-nothing husband were as unDursleyish as it was possible to be. The Dursleys shuddered to think what the neighbors would say if the Potters arrived in the street. The Dursleys knew that the Potters had a small son, too, but they had never even seen him. This boy was another good reason for keeping the Potters away; they didn’t want Dudley mixing with a child like that.
-
-</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wh8-iX-dQ6">
                                 <rect key="frame" x="341.66666666666669" y="336" width="213.00000000000006" height="37"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
@@ -311,12 +302,21 @@
                                     <constraint firstAttribute="width" secondItem="dhP-7B-1sY" secondAttribute="height" multiplier="3:4" id="yvi-d6-xxi"/>
                                 </constraints>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" verticalHuggingPriority="249" scrollEnabled="NO" maximumZoomScale="0.0" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LO7-dS-ATg">
+                                <rect key="frame" x="208.33333333333331" y="20" width="623.66666666666674" height="296"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">   The Dursleys had everything they wanted, but they also had a secret, and their greatest fear was that somebody would discover it. They didn’t think they could bear it if anyone found out about the Potters. Mrs. Potter was Mrs. Dursley’s sister, but they hadn’t met for several years; in fact, Mrs. Dursley pretended she didn’t have a sister, because her sister and her good-for-nothing husband were as unDursleyish as it was possible to be. The Dursleys shuddered to think what the neighbors would say if the Potters arrived in the street. The Dursleys knew that the Potters had a small son, too, but they had never even seen him. This boy was another good reason for keeping the Potters away; they didn’t want Dudley mixing with a child like that.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Wh8-iX-dQ6" firstAttribute="top" secondItem="LO7-dS-ATg" secondAttribute="bottom" constant="20" id="6am-DD-xfC"/>
                             <constraint firstItem="Uo5-l8-uwB" firstAttribute="trailing" secondItem="LO7-dS-ATg" secondAttribute="trailing" constant="20" id="7WU-yg-wQy"/>
                             <constraint firstItem="Wh8-iX-dQ6" firstAttribute="centerX" secondItem="Uo5-l8-uwB" secondAttribute="centerX" id="86n-hS-paT"/>
+                            <constraint firstItem="Wh8-iX-dQ6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jkX-Qq-F2R" secondAttribute="trailing" constant="8" symbolic="YES" id="Fln-Ub-wKw"/>
                             <constraint firstItem="LO7-dS-ATg" firstAttribute="leading" secondItem="dhP-7B-1sY" secondAttribute="trailing" constant="20" id="OkT-Dp-FfJ"/>
                             <constraint firstItem="dhP-7B-1sY" firstAttribute="top" secondItem="Uo5-l8-uwB" secondAttribute="top" constant="20" id="Sgn-Ha-S0v"/>
                             <constraint firstItem="1HN-Wz-5UA" firstAttribute="leading" secondItem="EDB-0N-RsV" secondAttribute="leading" id="UXW-gS-SVE"/>
