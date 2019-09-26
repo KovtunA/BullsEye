@@ -43,12 +43,25 @@ class GameViewController: UIViewController {
         slider.setMaximumTrackImage(trackRightResizable, for: .normal)
     }
     
-    @IBAction func showAlert(){
-        
-        let difference = abs(targetValue - currentValue)
-        var points = 100 - difference
+    @IBAction func showAlert() {
+        let (points, title) = getCurrentPointsAndAchievement()
         
         score += points
+        
+        let message = "\nYour scored \(points) points"
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: {
+            action in
+            self.newRound()
+        })
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func getCurrentPointsAndAchievement() -> (Int, String) {
+        let difference = abs(targetValue - currentValue)
+        var points = 100 - difference
         
         let title: String
         if difference == 0 {
@@ -60,19 +73,12 @@ class GameViewController: UIViewController {
                 points += 51
             }
         } else if difference < 10 {
-            title = "prety good"
+            title = "pretty good"
         } else {
             title = "try again"
         }
         
-        let messege = "\nYour scored \(points) points"
-        let alert = UIAlertController(title: title, message: messege, preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default, handler: {
-            action in
-            self.newRound()
-        })
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
+        return (points, title)
     }
     
     @IBAction func SliderMoved( slider: UISlider){
